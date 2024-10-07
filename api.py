@@ -41,7 +41,7 @@ async def chat(request: Request):
         async def event_stream():
             try:
                 stream = await client.chat.completions.create(
-                    model="gpt-3.5-turbo",
+                    model="gpt-4o-mini",
                     messages=data['messages'],
                     stream=True
                 )
